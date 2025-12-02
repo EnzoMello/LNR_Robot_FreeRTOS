@@ -56,16 +56,12 @@ void taskControle(void *pvParam) {
 
       case FUGA_FRENTE:
         robo.tras(250);
-        vTaskDelay(pdMS_TO_TICKS(400));
-        robo.girarDireita(250);
         vTaskDelay(pdMS_TO_TICKS(300));
         estadoAtual = BUSCA;
         break;
 
       case FUGA_TRAS:
         robo.frente(250);
-        vTaskDelay(pdMS_TO_TICKS(400));
-        robo.girarEsquerda(250);
         vTaskDelay(pdMS_TO_TICKS(300));
         estadoAtual = BUSCA;
         break;

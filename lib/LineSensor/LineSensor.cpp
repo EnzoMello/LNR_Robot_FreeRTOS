@@ -7,8 +7,8 @@ void LineSensor::init() {
 }
 
 bool LineSensor::check() {
-    int estado = digitalRead(_pin);
+    bool estado = digitalRead(_pin);
 
-    return (estado == LOW); 
+    return (estado == HIGH); 
     
 }
