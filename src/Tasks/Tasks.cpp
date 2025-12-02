@@ -83,13 +83,14 @@ void taskControle(void *pvParam) {
           float erro = distDir - distEsq;
           int ajuste = erro * 4; 
 
-          robo.moverDiferencial(vel - ajuste, vel + ajuste);
+          // robo.moverDiferencial(vel - ajuste, vel + ajuste);
+          robo.moverDiferencial(-250, -250);
         }
         else if (viuEsq) {
-          robo.moverDiferencial(100, 250); // Curva Esq
+          robo.moverDiferencial(100, -250); // Curva Esq
         }
         else if (viuDir) {
-          robo.moverDiferencial(250, 100); // Curva Dir
+          robo.moverDiferencial(-250, 100); // Curva Dir
         }
         break;
     }

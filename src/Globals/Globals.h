@@ -17,10 +17,10 @@ enum Estado {
 
 // DEFINIÇÃO DE PINOS
 // Ultrassom
-#define US_ESQ_TRIG 4
-#define US_ESQ_ECHO 5
-#define US_DIR_TRIG 13
-#define US_DIR_ECHO 34
+#define US_ESQ_TRIG 13
+#define US_ESQ_ECHO 34
+#define US_DIR_TRIG 4
+#define US_DIR_ECHO 5
 
 // Linha (Digital)
 #define LINHA_FRONTAL_PIN 36
